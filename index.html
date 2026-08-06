@@ -220,87 +220,31 @@
   </div>
 
   <!-- =====================================================
-       HERO SLIDER
+       HERO (VIDEO DE FONDO)
        ===================================================== -->
   <section class="hero" id="inicio" aria-label="Banner principal">
-    <div class="hero-slider" role="region" aria-roledescription="carrusel">
+    <!-- Video de fondo -->
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-1.jpg" preload="metadata"
+      aria-label="Video de portada AgroPerú">
+      <source src="images/videoPortada.mp4" type="video/mp4" />
+    </video>
 
-      <!-- Slide 1 -->
-      <div class="hero-slide" style="background-image: url('images/hero-1.jpg');" aria-label="Slide 1 de 3">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-tag">
-              <i class="fa-solid fa-leaf"></i> Tecnología Agrícola Peruana
-            </div>
-            <h1 class="hero-title">
-              Estructuras para <span>Agricultura Protegida</span> de Alta Tecnología
-            </h1>
-            <p class="hero-subtitle">
-              Invernaderos metálicos, casas mallas y macro túneles fabricados con los más altos estándares de calidad
-            </p>
-            <div class="hero-btns">
-              <a href="#categorias" class="btn btn-accent"><i class="fa-solid fa-list"></i> Ver Catálogo</a>
-              <a href="#contacto" class="btn btn-white"><i class="fa-solid fa-phone"></i> Contáctanos</a>
-            </div>
-          </div>
+    <!-- Overlay de legibilidad + Contenido -->
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-leaf"></i> Tecnología Agrícola Peruana
         </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="hero-slide" style="background-image: url('images/hero-2.jpg');" aria-label="Slide 2 de 3">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-tag">
-              <i class="fa-solid fa-layer-group"></i> Plásticos Agrícolas Premium
-            </div>
-            <h1 class="hero-title">
-              Plásticos Agrícolas <span>Agro Film</span>
-            </h1>
-            <p class="hero-subtitle">
-              Polietileno de baja densidad (LDPE), estabilizado UV, 200–250 micras, con duración aproximada de 3 años
-            </p>
-            <div class="hero-btns">
-              <a href="#categorias" class="btn btn-accent"><i class="fa-solid fa-circle-info"></i> Más Información</a>
-              <a href="#contacto" class="btn btn-white"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-            </div>
-          </div>
+        <h1 class="hero-title">
+          Estructuras para <span>Agricultura Protegida</span> de Alta Tecnología
+        </h1>
+        <p class="hero-subtitle">
+          Invernaderos metálicos, casas mallas y macro túneles fabricados con los más altos estándares de calidad
+        </p>
+        <div class="hero-btns">
+          <a href="#categorias" class="btn btn-accent"><i class="fa-solid fa-list"></i> Ver Catálogo</a>
+          <a href="#contacto" class="btn btn-white"><i class="fa-solid fa-phone"></i> Contáctanos</a>
         </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="hero-slide" style="background-image: url('images/hero-3.jpg');" aria-label="Slide 3 de 3">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-tag">
-              <i class="fa-solid fa-handshake"></i> Tu Proveedor Integral
-            </div>
-            <h1 class="hero-title">
-              Soluciones <span>Completas</span> para tu Invernadero
-            </h1>
-            <p class="hero-subtitle">
-              Desde la estructura hasta los accesorios — todo en un solo proveedor con cobertura nacional
-            </p>
-            <div class="hero-btns">
-              <a href="#contacto" class="btn btn-accent"><i class="fa-solid fa-file-invoice"></i> Solicitar
-                Cotización</a>
-              <a href="#categorias" class="btn btn-white"><i class="fa-solid fa-arrow-right"></i> Ver Productos</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Arrow Controls -->
-    <button class="hero-arrow prev" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
-    <button class="hero-arrow next" aria-label="Siguiente slide"><i class="fa-solid fa-chevron-right"></i></button>
-
-    <!-- Dot Controls -->
-    <div class="hero-controls" role="tablist" aria-label="Slides del carrusel">
-      <div class="hero-dots">
-        <button class="hero-dot" aria-label="Ir al slide 1" role="tab"></button>
-        <button class="hero-dot" aria-label="Ir al slide 2" role="tab"></button>
-        <button class="hero-dot" aria-label="Ir al slide 3" role="tab"></button>
       </div>
     </div>
   </section>
