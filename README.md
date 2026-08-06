@@ -15,9 +15,8 @@ Agro_peru_web_v2/
 │   └── main.js             ← Todas las funcionalidades JS
 ├── images/
 │   ├── logo.png
-│   ├── hero-1.jpg          ← Banner: Invernadero interior
-│   ├── hero-2.jpg          ← Banner: Plásticos agrícolas
-│   ├── hero-3.jpg          ← Banner: Vista aérea
+│   ├── videoPortada.mp4      ← Video de fondo del hero
+│   ├── hero-1.jpg            ← Poster del hero (fallback mientras carga)
 │   ├── cat-invernadero-alta.jpg
 │   ├── cat-invernadero-media.jpg
 │   ├── cat-casa-malla.jpg
@@ -63,7 +62,7 @@ Doble clic en `index.html` (algunas funciones pueden no andar sin servidor)
 
 ## ✅ Funcionalidades Implementadas
 
-- [x] **Hero Slider** — Autoplay 5s, flechas, dots, soporte táctil
+- [x] **Hero con video de fondo** — mp4 autoplay en bucle (muted + playsinline), overlay para legibilidad y poster de respaldo
 - [x] **Contadores animados** — IntersectionObserver activado por scroll
 - [x] **Navbar sticky** — Scroll con sombra
 - [x] **Menú hamburguesa** — Mobile con panel lateral animado
