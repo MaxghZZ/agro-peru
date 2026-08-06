@@ -1,6 +1,6 @@
 /**
  * AgroPerú — JavaScript principal
- * Funcionalidades: Slider, Contadores animados, Sticky navbar,
+ * Funcionalidades: Contadores animados, Sticky navbar,
  * Menú hamburguesa, Dropdown, Lightbox, Filtros, Smooth scroll,
  * WhatsApp float, Validación de formulario
  */
@@ -8,55 +8,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==============================================
-     1. HERO SLIDER
-     ============================================== */
-  const slides     = document.querySelectorAll('.hero-slide');
-  const dots       = document.querySelectorAll('.hero-dot');
-  const prevBtn    = document.querySelector('.hero-arrow.prev');
-  const nextBtn    = document.querySelector('.hero-arrow.next');
-  let currentSlide = 0;
-  let sliderTimer  = null;
-
-  function goToSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  }
-
-  function nextSlide() { goToSlide(currentSlide + 1); }
-  function prevSlide() { goToSlide(currentSlide - 1); }
-
-  function startAutoplay() {
-    stopAutoplay();
-    sliderTimer = setInterval(nextSlide, 5000);
-  }
-  function stopAutoplay() {
-    if (sliderTimer) clearInterval(sliderTimer);
-  }
-
-  if (slides.length > 0) {
-    slides[0].classList.add('active');
-    dots[0].classList.add('active');
-    startAutoplay();
-
-    dots.forEach((dot, i) => dot.addEventListener('click', () => { goToSlide(i); startAutoplay(); }));
-    prevBtn?.addEventListener('click', () => { prevSlide(); startAutoplay(); });
-    nextBtn?.addEventListener('click', () => { nextSlide(); startAutoplay(); });
-
-    // Swipe touch support
-    let touchStartX = 0;
-    const heroEl = document.querySelector('.hero');
-    heroEl?.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-    heroEl?.addEventListener('touchend', e => {
-      const diff = touchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) { diff > 0 ? nextSlide() : prevSlide(); startAutoplay(); }
-    });
-  }
-
-  /* ==============================================
-     2. ANIMATED COUNTERS
+     1. ANIMATED COUNTERS
      ============================================== */
   function animateCounter(el, target, duration = 1800) {
     const start    = Date.now();
@@ -89,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (statsBar) statsObserver.observe(statsBar);
 
   /* ==============================================
-     3. STICKY NAVBAR
+     2. STICKY NAVBAR
      ============================================== */
   const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
@@ -101,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   /* ==============================================
-     4. HAMBURGER / MOBILE NAV
+     3. HAMBURGER / MOBILE NAV
      ============================================== */
   const hamburger   = document.querySelector('.hamburger');
   const mobileNav   = document.querySelector('.mobile-nav');
@@ -134,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==============================================
-     5. LIGHTBOX
+     4. LIGHTBOX
      ============================================== */
   const lightbox     = document.querySelector('.lightbox');
   const lightboxImg  = document.querySelector('.lightbox-img');
@@ -181,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==============================================
-     6. PRODUCT FILTER
+     5. PRODUCT FILTER
      ============================================== */
   const filterBtns   = document.querySelectorAll('.filter-btn');
   const productCards = document.querySelectorAll('.product-card[data-category]');
@@ -199,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==============================================
-     7. SMOOTH SCROLL
+     6. SMOOTH SCROLL
      ============================================== */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
@@ -214,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==============================================
-     8. BACK TO TOP
+     7. BACK TO TOP
      ============================================== */
   const backToTop = document.querySelector('.back-to-top');
   window.addEventListener('scroll', () => {
@@ -224,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
   backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   /* ==============================================
-     9. FORM VALIDATION
+     8. FORM VALIDATION
      ============================================== */
   const contactForm = document.getElementById('contact-form');
   
@@ -271,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==============================================
-     10. NAVBAR ACTIVE LINK ON SCROLL
+     9. NAVBAR ACTIVE LINK ON SCROLL
      ============================================== */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
@@ -289,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(s => sectionObserver.observe(s));
 
   /* ==============================================
-     11. CARD HOVER ANIMATION (IntersectionObserver)
+     10. CARD HOVER ANIMATION (IntersectionObserver)
      ============================================== */
   const animatedCards = document.querySelectorAll('.category-card, .product-card, .why-card, .testimonial-card');
   const cardObserver = new IntersectionObserver((entries) => {
