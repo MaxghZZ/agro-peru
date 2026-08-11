@@ -172,10 +172,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.reel-item').forEach(item => {
     item.addEventListener('click', () => {
-      const video = item.querySelector('video source');
-      if (video) openVideoLightbox(video.src);
+      const source = item.querySelector('video source');
+      if (!source) return;
+      // El <source> puede estar diferido (data-src) o ya cargado (src)
+      const src = source.getAttribute('src') || source.dataset.src;
+      if (src) openVideoLightbox(src);
     });
   });
+
+  /* ----------------------------------------------
+     4c. CARGA DIFERIDA DE LOS VIDEOS DEL REEL
+     Los <source> llevan data-src en vez de src, asi
+     el navegador no los descarga al abrir la pagina.
+     Solo se cargan y reproducen al entrar en pantalla.
+     ---------------------------------------------- */
+  const reelVideos = document.querySelectorAll('.reel-item video');
+
+  if (reelVideos.length) {
+    const loadReelVideo = video => {
+      const source = video.querySelector('source[data-src]');
+      if (!source) return;
+      source.src = source.dataset.src;
+      source.removeAttribute('data-src');
+      video.load();
+    };
+
+    const reelObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          loadReelVideo(video);
+          video.play().catch(() => { /* el navegador puede bloquearlo, no es critico */ });
+        } else {
+          video.pause();
+        }
+      });
+    }, { rootMargin: '200px 0px', threshold: 0.1 });
+
+    reelVideos.forEach(v => reelObserver.observe(v));
+  }
 
   videoLbClose?.addEventListener('click', closeVideoLightbox);
   videoLightbox?.addEventListener('click', e => { if (e.target === videoLightbox) closeVideoLightbox(); });
