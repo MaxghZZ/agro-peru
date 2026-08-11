@@ -267,10 +267,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const sections = rawSections.map(s => { const [t, ...rest] = s.split(':::'); return { title: t.trim(), text: rest.join(':::').trim() }; });
       const body = document.createElement('div');
       body.className = 'cat-modal-malla';
+      // Las 2 primeras fotos van grandes, apiladas junto al texto (igual que siempre).
+      // Desde la 3ra en adelante, van ABAJO de todo el bloque, ancho completo,
+      // en pares lado a lado (y la ultima sola si sobra), mismo tamano grande.
+      const mainImgs  = images.slice(0, 2);
+      const extraImgs = images.slice(2);
+      let extraRowsHtml = '';
+      for (let i = 0; i < extraImgs.length; i += 2) {
+        const pair = extraImgs.slice(i, i + 2);
+        extraRowsHtml += `
+          <div class="cat-malla-imgs-extra-row${pair.length === 1 ? ' single' : ''}">
+            ${pair.map(src => `<img src="${src}" alt="${title}" />`).join('')}
+          </div>`;
+      }
       body.innerHTML = `
         <div class="cat-malla-imgs">
-          <img src="${images[0]}" alt="${title}" />
-          <img src="${images[1] || images[0]}" alt="${title}" />
+          ${mainImgs.map(src => `<img src="${src}" alt="${title}" />`).join('')}
         </div>
         <div class="cat-malla-sections">
           ${sections.map(s => `
@@ -281,7 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <a class="cat-malla-wa btn btn-primary" href="https://wa.me/51975068425" target="_blank" rel="noopener">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp
           </a>
-        </div>`;
+        </div>
+        ${extraRowsHtml ? `<div class="cat-malla-imgs-extra-wrap">${extraRowsHtml}</div>` : ''}`;
       content.appendChild(body);
     } else if (layout === 'plastico') {
       const rawSections = (card.dataset.modalSections || '').split(';;;').filter(Boolean);
