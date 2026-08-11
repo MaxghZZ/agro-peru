@@ -640,16 +640,51 @@ document.addEventListener('DOMContentLoaded', () => {
     field.addEventListener('input', () => { if (field.classList.contains('error')) validateField(field); });
   });
 
-  contactForm?.addEventListener('submit', e => {
+  contactForm?.addEventListener('submit', async e => {
     e.preventDefault();
+
     const fields = contactForm.querySelectorAll('input[required], select[required], textarea[required]');
     let allValid = true;
     fields.forEach(f => { if (!validateField(f)) allValid = false; });
-    if (allValid) {
-      const successEl = document.querySelector('.form-success');
-      successEl?.classList.add('show');
-      contactForm.reset();
-      setTimeout(() => successEl?.classList.remove('show'), 6000);
+    if (!allValid) return;
+
+    const successEl = document.querySelector('.form-success');
+    const failEl    = document.querySelector('.form-fail');
+    const submitBtn = contactForm.querySelector('.form-submit');
+    const btnHtml   = submitBtn?.innerHTML;
+
+    successEl?.classList.remove('show');
+    failEl?.classList.remove('show');
+
+    // Estado "enviando": evita dobles envíos
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Enviando...';
+    }
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm)
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        successEl?.classList.add('show');
+        contactForm.reset();
+        setTimeout(() => successEl?.classList.remove('show'), 8000);
+      } else {
+        throw new Error(data.message || 'Error al enviar');
+      }
+    } catch (err) {
+      failEl?.classList.add('show');
+      setTimeout(() => failEl?.classList.remove('show'), 10000);
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = btnHtml;
+      }
     }
   });
 

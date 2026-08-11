@@ -1,0 +1,10 @@
+# robots.txt - Invernaderos Peru
+# https://www.invernaderossperu.com/
+
+User-agent: *
+Allow: /
+
+# Carpeta de respaldo local (no debe indexarse)
+Disallow: /_originales/
+
+Sitemap: https://www.invernaderossperu.com/sitemap.xml

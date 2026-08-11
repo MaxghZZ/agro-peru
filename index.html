@@ -1036,6 +1036,16 @@
             Formulario de Cotización
           </h3>
           <form id="contact-form" novalidate>
+            <!-- ============================================================
+                 Web3Forms: pega aquí tu Access Key (la recibes por correo
+                 al registrarte en https://web3forms.com con imporiap@gmail.com)
+                 ============================================================ -->
+            <input type="hidden" name="access_key" value="PEGA_AQUI_TU_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="Nueva solicitud de cotización - Invernaderos Perú" />
+            <input type="hidden" name="from_name" value="Web Invernaderos Perú" />
+            <!-- Campo anti-spam: invisible para humanos, los bots lo rellenan -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
             <div class="form-group">
               <label for="nombre">Nombre completo <span>*</span></label>
               <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre completo"
@@ -1089,6 +1099,10 @@
             <div class="form-success" role="status" aria-live="polite">
               <i class="fa-solid fa-circle-check" aria-hidden="true"></i> ¡Solicitud enviada! Nos comunicaremos contigo en menos de 24
               horas.
+            </div>
+            <div class="form-fail" role="alert" aria-live="assertive">
+              <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> No se pudo enviar tu solicitud.
+              Escríbenos por WhatsApp al <a href="https://wa.me/51975068425" target="_blank" rel="noopener">+51 975 068 425</a>.
             </div>
           </form>
         </div>

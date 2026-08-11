@@ -1530,6 +1530,33 @@ textarea.form-control {
   display: block;
 }
 
+.form-fail {
+  display: none;
+  padding: 16px 20px;
+  background: #FDECEA;
+  border: 1px solid #F5B7B1;
+  border-radius: var(--radius-sm);
+  color: #922B21;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.form-fail.show {
+  display: block;
+}
+
+.form-fail a {
+  color: #922B21;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.form-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 /* Contact Info */
 .contact-info {}
 
