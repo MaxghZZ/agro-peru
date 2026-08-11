@@ -1,6 +1,6 @@
-# 🌿 AgroPerú — Sitio Web Corporativo
+# 🌿 AgroPerú — Sitio Web Corporativo (Grupo IAP Invernaderos)
 
-Sitio web corporativo completo para **AgroPerú**, empresa peruana especializada en la fabricación y comercialización de estructuras para agricultura protegida de alta tecnología.
+Sitio web corporativo completo para **AgroPerú / Grupo IAP Invernaderos**, empresa peruana especializada en la fabricación y comercialización de estructuras para agricultura protegida de alta tecnología.
 
 ---
 
@@ -8,22 +8,26 @@ Sitio web corporativo completo para **AgroPerú**, empresa peruana especializada
 
 ```
 Agro_peru_web_v2/
-├── index.html              ← Página principal completa
+├── index.html                ← Página principal completa
 ├── css/
-│   └── styles.css          ← Todos los estilos (sistema de diseño completo)
+│   └── styles.css            ← Todos los estilos (sistema de diseño completo)
 ├── js/
-│   └── main.js             ← Todas las funcionalidades JS
+│   └── main.js               ← Todas las funcionalidades JS
 ├── images/
-│   ├── logo.png
-│   ├── videoPortada.mp4      ← Video de fondo del hero
-│   ├── hero-1.jpg            ← Poster del hero (fallback mientras carga)
-│   ├── cat-invernadero-alta.jpg
-│   ├── cat-invernadero-media.jpg
-│   ├── cat-casa-malla.jpg
-│   ├── cat-macro-tunel.jpg
-│   ├── cat-plastico.jpg
-│   ├── cat-mallas.jpg
-│   └── cat-accesorios.jpg
+│   ├── LogoAgroPeru.png        ← Logo principal
+│   ├── favicon.png             ← Favicon del sitio
+│   ├── hero-1.jpg              ← Poster del hero (fallback)
+│   ├── videoPortada.mp4        ← Video de fondo del hero
+│   ├── img1.jpg … img6.jpg     ← Imágenes de categorías de productos
+│   ├── img_2.jpg               ← Invernadero Multitunel
+│   ├── img_AgroFilm.jpg        ← Agro Film LDPE
+│   ├── img_malla.jpg           ← Malla Antiáfida
+│   ├── img-accesorio.jpg       ← Accesorios de fijación
+│   ├── img-accesorios.jpg      ← Accesorios estructurales
+│   ├── img-mecanico.jpg        ← Componentes mecánicos
+│   └── proyects/
+│       ├── proyecto-01…06.jpg  ← Fotos reales de proyectos ejecutados
+│       └── video-01…07.mp4     ← Videos del reel de proyectos
 └── README.md
 ```
 
@@ -64,16 +68,18 @@ Doble clic en `index.html` (algunas funciones pueden no andar sin servidor)
 
 - [x] **Hero con video de fondo** — mp4 autoplay en bucle (muted + playsinline), overlay para legibilidad y poster de respaldo
 - [x] **Contadores animados** — IntersectionObserver activado por scroll
-- [x] **Navbar sticky** — Scroll con sombra
+- [x] **Navbar sticky** — Scroll con sombra y cambio de color
 - [x] **Menú hamburguesa** — Mobile con panel lateral animado
 - [x] **Dropdown de Productos** — Con hover animation
-- [x] **Lightbox** — Galería con navegación por teclado y touch
+- [x] **Lightbox** — Galería con navegación por teclado
 - [x] **Filtro de productos** — Todos / Invernaderos / Plásticos / Mallas / Accesorios
 - [x] **Smooth scroll** — Navegación suave por secciones
 - [x] **Botón WhatsApp flotante** — Con animación pulse y tooltip
 - [x] **Validación de formulario** — Con mensajes de error amigables
 - [x] **Back to Top** — Botón visible al hacer scroll
 - [x] **Card animations** — IntersectionObserver entrada suave
+- [x] **Video Reel** — Carrusel infinito auto-scroll con videos de proyectos
+- [x] **Galería de Proyectos** — Fotos reales con lightbox
 
 ---
 
@@ -98,8 +104,6 @@ Para publicar el sitio, reemplazar los siguientes datos de contacto placeholder:
 - [ ] **Dirección:** `Av. La Agricultura 123, Ate Vitarte, Lima` → dirección real
 - [ ] **Mapa:** Actualizar coordenadas del `<iframe>` de Google Maps
 - [ ] **Redes sociales:** Actualizar links de Facebook e Instagram
-- [ ] **Imágenes de galería** (picsum.photos) → fotos reales de proyectos
-- [ ] **Logo:** Reemplazar con logo vectorial oficial
 - [ ] **Dominio canonical:** Actualizar meta tag en `<head>`
 
 ---
@@ -108,10 +112,9 @@ Para publicar el sitio, reemplazar los siguientes datos de contacto placeholder:
 
 - **Font Awesome 6.5** — Iconos
 - **Google Fonts** — Montserrat + Open Sans
-- **Picsum Photos** — Imágenes placeholder (reemplazar con fotos reales)
 
 **No se requiere npm, webpack ni ningún framework.** El sitio es 100% HTML/CSS/JS vanilla.
 
 ---
 
-© 2025 AgroPerú. Desarrollado con ❤️ para el agro peruano.
+© 2026 AgroPerú / Grupo IAP Invernaderos. Desarrollado con ❤️ para el agro peruano.

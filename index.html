@@ -6,44 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ===== SEO META TAGS ===== -->
-  <title>AgroPerú – Invernaderos, Plásticos Agrícolas y Mallas para Agricultura Protegida</title>
+  <title>Invernaderos Peru – Invernaderos, Plásticos Agrícolas y Mallas para Agricultura Protegida</title>
   <meta name="description"
-    content="AgroPerú: fabricación y comercialización de invernaderos metálicos de alta tecnología, plásticos agrícolas Agro Film, casas mallas, macro túneles y accesorios estructurales en Perú." />
-  <meta name="keywords"
-    content="invernaderos Perú, invernaderos metálicos, agricultura protegida, plástico agrícola LDPE, Agro Film, casa malla, macro túnel, malla antiáfida, polisombra, estructura invernadero, AgroPerú" />
+    content="Invernaderos Peru: fabricación y comercialización de invernaderos metálicos de alta tecnología, plásticos agrícolas Agro Film, casas mallas, macro túneles y accesorios estructurales en Perú." />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="AgroPerú" />
-  <link rel="canonical" href="https://www.agroperuperu.com/" />
+  <meta name="author" content="Invernaderos Peru" />
+  <link rel="canonical" href="https://www.invernaderossperu.com/" />
 
   <!-- ===== OPEN GRAPH ===== -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="AgroPerú – Estructuras para Agricultura Protegida" />
+  <meta property="og:title" content="Invernaderos Peru – Estructuras para Agricultura Protegida" />
   <meta property="og:description"
     content="Invernaderos de alta tecnología, plásticos agrícolas Agro Film, casas mallas y macro túneles para el agro peruano." />
-  <meta property="og:url" content="https://www.agroperuperu.com/" />
-  <meta property="og:image" content="https://www.agroperuperu.com/images/hero-1.jpg" />
+  <meta property="og:url" content="https://www.invernaderossperu.com/" />
+  <meta property="og:image" content="https://www.invernaderossperu.com/images/hero-1.jpg" />
   <meta property="og:locale" content="es_PE" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AgroPerú – Estructuras para Agricultura Protegida" />
+  <meta name="twitter:title" content="Invernaderos Peru – Estructuras para Agricultura Protegida" />
   <meta name="twitter:description"
     content="Fabricación de invernaderos, plásticos agrícolas y accesorios para el agro peruano." />
 
   <!-- ===== FAVICON ===== -->
-  <link rel="icon" type="image/png" href="images/LogoAgroPeru.png" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
+  <!-- ===== PRELOADS ===== -->
+  <link rel="preload" as="image" href="images/LogoAgroPeru.png" />
+  <link rel="preload" as="image" href="images/hero-1.jpg" />
 
   <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet" />
 
-  <!-- ===== FONT AWESOME ===== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" />
+  <!-- ===== FONT AWESOME (async) ===== -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous" />
+  </noscript>
 
   <!-- ===== STYLES ===== -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ===== JSON-LD LocalBusiness ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Invernaderos Peru",
+    "image": "https://www.invernaderossperu.com/images/hero-1.jpg",
+    "url": "https://www.invernaderossperu.com/",
+    "telephone": "+51975068425",
+    "email": "imporiap@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Carabayllo",
+      "addressRegion": "Lima",
+      "addressCountry": "PE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/share/r/1ETeRtcM2X/",
+      "https://www.tiktok.com/@importaciones.agroperu"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -51,31 +96,29 @@
   <!-- =====================================================
        TOP BAR
        ===================================================== -->
-  <div class="top-bar" role="banner">
+  <div class="top-bar">
     <div class="container">
       <div class="top-bar-left">
-        <a href="tel:+51975068425" aria-label="Llamar a AgroPerú">
-          <i class="fa-solid fa-phone"></i> +51 975 068 425
+        <a href="tel:+51975068425" aria-label="Llamar a Invernaderos Peru">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i> +51 975 068 425
         </a>
-        <a href="https://wa.me/51975068425" target="_blank" rel="noopener" aria-label="WhatsApp AgroPerú">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        <a href="https://wa.me/51975068425" target="_blank" rel="noopener" aria-label="WhatsApp Invernaderos Peru">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
         </a>
-        <a href="mailto:imporiap@gmail.com" aria-label="Email AgroPerú">
-          <i class="fa-solid fa-envelope"></i> imporiap@gmail.com
+        <a href="mailto:imporiap@gmail.com" aria-label="Email Invernaderos Peru">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> imporiap@gmail.com
         </a>
       </div>
       <div class="top-bar-right">
         <span class="top-bar-schedule">
-          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-clock" aria-hidden="true"></i>
           Lun–Vie 8am–6pm &nbsp;|&nbsp; Sáb 8am–1pm
         </span>
         <div class="top-bar-socials">
-          <a href="#" aria-label="Facebook AgroPerú" target="_blank" rel="noopener"><i
-              class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram AgroPerú" target="_blank" rel="noopener"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/51975068425" aria-label="WhatsApp AgroPerú" target="_blank" rel="noopener"><i
-              class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/r/1ETeRtcM2X/" aria-label="Facebook Invernaderos Peru" target="_blank"
+            rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@importaciones.agroperu?_r=1&_t=ZS-98koc05ioFx"
+            aria-label="TikTok Invernaderos Peru" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -88,21 +131,39 @@
     <div class="container">
       <div class="header-inner">
         <!-- Logo -->
-        <a href="#inicio" class="header-logo" aria-label="AgroPerú – Inicio">
-          <img src="images/LogoAgroPeru.png" alt="Logo AgroPerú" />
+        <a href="#inicio" class="header-logo" aria-label="Invernaderos Peru – Inicio">
+          <img src="images/LogoAgroPeru.png" alt="Logo Invernaderos Peru" />
         </a>
 
-        <!-- Search -->
-        <div class="header-search" role="search">
-          <input type="search" placeholder="Buscar productos: invernaderos, mallas, plásticos..."
-            aria-label="Buscar productos" id="search-input" />
-          <button aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- Header Contact Info -->
+        <div class="header-contact-info">
+          <div class="header-contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <div>
+              <span class="header-contact-label">Llámanos</span>
+              <a href="tel:+51975068425">+51 975 068 425</a>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <span class="header-contact-label">Dirección</span>
+              <span>Carabayllo, Lima</span>
+            </div>
+          </div>
+          <div class="header-contact-item">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <div>
+              <span class="header-contact-label">Horario</span>
+              <span>Lun–Vie 8am–6pm | Sáb 8am–1pm</span>
+            </div>
+          </div>
         </div>
 
         <!-- CTA Desktop -->
         <div class="header-cta">
           <a href="#contacto" class="btn btn-primary">
-            <i class="fa-solid fa-file-invoice"></i> Solicitar Cotización
+            <i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Solicitar Cotización
           </a>
         </div>
 
@@ -125,51 +186,39 @@
           </li>
           <li class="nav-item">
             <a href="#categorias" class="nav-link">
-              Productos <i class="fa-solid fa-chevron-down"></i>
+              Productos <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
             </a>
             <div class="dropdown" role="menu">
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-building"></i> Invernaderos Alta Tecnología</a>
+                <a href="#categorias"><i class="fa-solid fa-building" aria-hidden="true"></i> Invernaderos Alta Tecnología</a>
               </div>
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-warehouse"></i> Invernaderos Media/Baja Tecnología</a>
+                <a href="#categorias"><i class="fa-solid fa-warehouse" aria-hidden="true"></i> Invernaderos Media/Baja Tecnología</a>
               </div>
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-boxes-stacked"></i> Casas Mallas / Maya</a>
+                <a href="#categorias"><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i> Casas Malla</a>
               </div>
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-archway"></i> Macro Túneles</a>
-              </div>
-              <hr class="dropdown-divider" />
-              <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-layer-group"></i> Plásticos Agrícolas (Agro Film)</a>
-              </div>
-              <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-grip"></i> Mallas y Coberturas</a>
+                <a href="#categorias"><i class="fa-solid fa-archway" aria-hidden="true"></i> Macro Túneles</a>
               </div>
               <hr class="dropdown-divider" />
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-screwdriver-wrench"></i> Accesorios Estructurales</a>
+                <a href="#categorias"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Plásticos Agrícolas (Agro Film)</a>
               </div>
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-gears"></i> Componentes Mecánicos</a>
+                <a href="#categorias"><i class="fa-solid fa-grip" aria-hidden="true"></i> Mallas y Coberturas</a>
+              </div>
+              <hr class="dropdown-divider" />
+              <div class="dropdown-item" role="menuitem">
+                <a href="#categorias"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Accesorios Estructurales</a>
               </div>
               <div class="dropdown-item" role="menuitem">
-                <a href="#categorias"><i class="fa-solid fa-link"></i> Accesorios de Fijación</a>
+                <a href="#categorias"><i class="fa-solid fa-gears" aria-hidden="true"></i> Componentes Mecánicos</a>
+              </div>
+              <div class="dropdown-item" role="menuitem">
+                <a href="#categorias"><i class="fa-solid fa-link" aria-hidden="true"></i> Accesorios de Fijación</a>
               </div>
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="#categorias" class="nav-link">Invernaderos</a>
-          </li>
-          <li class="nav-item">
-            <a href="#categorias" class="nav-link">Plásticos Agrícolas</a>
-          </li>
-          <li class="nav-item">
-            <a href="#categorias" class="nav-link">Mallas y Coberturas</a>
-          </li>
-          <li class="nav-item">
-            <a href="#categorias" class="nav-link">Accesorios</a>
           </li>
           <li class="nav-item">
             <a href="#galeria" class="nav-link">Galería</a>
@@ -186,33 +235,32 @@
   <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menú móvil">
     <div class="mobile-nav-panel">
       <div class="mobile-nav-header">
-        <span class="mobile-nav-logo"><img src="images/LogoAgroPeru.png" alt="Logo AgroPerú" /></span>
-        <button class="mobile-nav-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+        <span class="mobile-nav-logo"><img src="images/LogoAgroPeru.png" alt="Logo Invernaderos Peru" /></span>
+        <button class="mobile-nav-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
       </div>
       <ul class="mobile-nav-list" role="list">
         <li class="mobile-nav-item"><a href="#inicio">Inicio</a></li>
         <li class="mobile-nav-item"><a href="#nosotros">Nosotros</a></li>
         <li class="mobile-nav-item">
-          <a href="#" data-toggle="true">Productos <i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#" data-toggle="true">Productos <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
           <div class="mobile-dropdown">
-            <a href="#categorias"><i class="fa-solid fa-building"></i> Invernaderos Alta Tecnología</a>
-            <a href="#categorias"><i class="fa-solid fa-warehouse"></i> Invernaderos Media/Baja</a>
-            <a href="#categorias"><i class="fa-solid fa-boxes-stacked"></i> Casas Mallas / Maya</a>
-            <a href="#categorias"><i class="fa-solid fa-archway"></i> Macro Túneles</a>
-            <a href="#categorias"><i class="fa-solid fa-layer-group"></i> Plásticos Agrícolas</a>
-            <a href="#categorias"><i class="fa-solid fa-grip"></i> Mallas y Coberturas</a>
-            <a href="#categorias"><i class="fa-solid fa-screwdriver-wrench"></i> Accesorios Estructurales</a>
-            <a href="#categorias"><i class="fa-solid fa-gears"></i> Componentes Mecánicos</a>
-            <a href="#categorias"><i class="fa-solid fa-link"></i> Accesorios de Fijación</a>
+            <a href="#categorias"><i class="fa-solid fa-building" aria-hidden="true"></i> Invernaderos Alta Tecnología</a>
+            <a href="#categorias"><i class="fa-solid fa-warehouse" aria-hidden="true"></i> Invernaderos Media/Baja</a>
+            <a href="#categorias"><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i> Casas Mallas / Maya</a>
+            <a href="#categorias"><i class="fa-solid fa-archway" aria-hidden="true"></i> Macro Túneles</a>
+            <a href="#categorias"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Plásticos Agrícolas</a>
+            <a href="#categorias"><i class="fa-solid fa-grip" aria-hidden="true"></i> Mallas y Coberturas</a>
+            <a href="#categorias"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Accesorios Estructurales</a>
+            <a href="#categorias"><i class="fa-solid fa-gears" aria-hidden="true"></i> Componentes Mecánicos</a>
+            <a href="#categorias"><i class="fa-solid fa-link" aria-hidden="true"></i> Accesorios de Fijación</a>
           </div>
         </li>
         <li class="mobile-nav-item"><a href="#galeria">Galería</a></li>
-        <li class="mobile-nav-item"><a href="#testimonios">Testimonios</a></li>
         <li class="mobile-nav-item"><a href="#contacto">Contacto</a></li>
       </ul>
       <div style="padding: 20px 22px;">
         <a href="#contacto" class="btn btn-primary" style="width:100%;justify-content:center;">
-          <i class="fa-solid fa-file-invoice"></i> Solicitar Cotización
+          <i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Solicitar Cotización
         </a>
       </div>
     </div>
@@ -224,15 +272,15 @@
   <section class="hero" id="inicio" aria-label="Banner principal">
     <!-- Video de fondo -->
     <video class="hero-video" autoplay muted loop playsinline poster="images/hero-1.jpg" preload="metadata"
-      aria-label="Video de portada AgroPerú">
-      <source src="images/videoPortada.mp4" type="video/mp4" />
+      aria-label="Video de portada Invernaderos Peru">
+      <source src="images/videoPortada_2.mp4" type="video/mp4" />
     </video>
 
     <!-- Overlay de legibilidad + Contenido -->
     <div class="container">
       <div class="hero-content">
         <div class="hero-tag">
-          <i class="fa-solid fa-leaf"></i> Tecnología Agrícola Peruana
+          <i class="fa-solid fa-leaf" aria-hidden="true"></i> Tecnología Agrícola Peruana
         </div>
         <h1 class="hero-title">
           Estructuras para <span>Agricultura Protegida</span> de Alta Tecnología
@@ -241,8 +289,8 @@
           Invernaderos metálicos, casas mallas y macro túneles fabricados con los más altos estándares de calidad
         </p>
         <div class="hero-btns">
-          <a href="#categorias" class="btn btn-accent"><i class="fa-solid fa-list"></i> Ver Catálogo</a>
-          <a href="#contacto" class="btn btn-white"><i class="fa-solid fa-phone"></i> Contáctanos</a>
+          <a href="#categorias" class="btn btn-accent"><i class="fa-solid fa-list" aria-hidden="true"></i> Ver Catálogo</a>
+          <a href="#contacto" class="btn btn-white"><i class="fa-solid fa-phone" aria-hidden="true"></i> Contáctanos</a>
         </div>
       </div>
     </div>
@@ -255,22 +303,22 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <div class="stat-icon"><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i></div>
           <div class="stat-number" data-target="500">0</div>
           <div class="stat-label">Proyectos Ejecutados</div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="stat-icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
           <div class="stat-number" data-target="15">0</div>
           <div class="stat-label">Regiones del Perú Atendidas</div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="stat-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
           <div class="stat-number" data-target="200">0</div>
           <div class="stat-label">Clientes Satisfechos</div>
         </div>
         <div class="stat-item">
-          <div class="stat-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+          <div class="stat-icon"><i class="fa-solid fa-boxes-packing" aria-hidden="true"></i></div>
           <div class="stat-number" data-target="50">0</div>
           <div class="stat-label">Productos en Catálogo</div>
         </div>
@@ -292,182 +340,347 @@
         </p>
       </div>
 
-      <div class="categories-grid">
+      <div class="categories-grid" id="categories-grid">
 
         <!-- Cat 1 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="galeria"
+          data-modal-title="Invernaderos Metálicos Mecanizados"
+          data-modal-images="images/images-card1/img2.jpg,images/images-card1/img3.jpg,images/images-card1/img4.jpg,images/images-card1/img5.jpg">
           <div class="category-img-wrap">
-            <img src="images/cat-invernadero-alta.jpg" alt="Invernaderos de Alta Tecnología" class="category-img"
+            <img src="images/img-InverAlta.png" alt="Invernaderos Metálicos Mecanizados" class="category-img"
               loading="lazy" />
             <span class="category-badge">Alta Tecnología</span>
           </div>
           <div class="category-body">
-            <h3 class="category-title">Invernaderos de Alta Tecnología</h3>
-            <p class="category-desc">Estructuras metálicas con sistemas de ventilación automatizada, control de clima,
-              ventanas cenitales, paneles de enfriamiento y motoreductores para apertura automática.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="category-title">Invernaderos Metálicos Mecanizados</h3>
+            <p class="category-desc cat-desc-full">invernadero metálico mecanizado es una instalación agrícola con
+              estructura de acero o aluminio equipada con sistemas automatizados (motores, sensores y controles
+              electrónicos) para regular de forma autónoma y ventilación, el riego, la fertirrigación, iluminación y la
+              temperatura interior según las necesidades del cultivo.
+
+              Componentes Estructurales y MecanizadosPerfiles y uniones: Tubos de acero galvanizado, cerchas, pilares y
+              arcos fabricados con precisión mediante procesos de mecanizado industrial para asegurar un acople perfecto
+              sin holguras.Sistemas de sujeción: Canales metálicos, grampas y perfiles de aluminio con alambre zigzag
+              para fijar la cubierta plástica sin dañarla.Bases y cimentación: Anclajes empotrados en dados de concreto
+              para soportar cargas de viento y peso operativo.Automatización y Mecanización Ventilación cenital y
+              lateral: Motores reductores conectados a ejes que abren o cierran ventanales automáticamente por señales
+              de sensores de temperatura y viento.Climatización y pantallas térmicas: Sistemas retráctiles de sombreo o
+              aislamiento térmico accionados por piñón y cremallera.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 2 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-title="Invernaderos de Media y Baja Tecnología"
+          data-modal-desc="Soluciones accesibles para pequeños y medianos productores. Estructura de tubo galvanizado o perfil metálico adaptable a cualquier tipo de terreno, maximizando el uso del espacio con cobertura plástica de alta duración."
+          data-modal-images="images/images-card2/img1.jpg,images/images-card2/img2.jpg,images/images-card2/img3.jpg">
           <div class="category-img-wrap">
-            <img src="images/cat-invernadero-media.jpg" alt="Invernaderos de Media y Baja Tecnología"
-              class="category-img" loading="lazy" />
+            <img src="images/img2.jpg" alt="Invernaderos de Media y Baja Tecnología" class="category-img"
+              loading="lazy" />
             <span class="category-badge">Media/Baja Tec.</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Invernaderos de Media y Baja Tecnología</h3>
-            <p class="category-desc">Soluciones accesibles para pequeños y medianos productores. Estructuras robustas de
-              tubo galvanizado con cobertura plástica de alta duración.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc cat-desc-full">Un invernadero de baja tecnología es una estructura sencilla,
+              económica y de rápida construcción, ideal para productores que se inician en la agricultura protegida o
+              para zonas con climas templados. Su principal objetivo es ofrecer una protección física básica contra
+              agentes climáticos extremos (lluvias fuertes, granizo y viento) con una inversión inicial mínima.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 3 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="galeria" data-modal-title="Casas Malla"
+          data-modal-images="images/images-card3/img1.png,images/images-card3/img2.png,images/images-card3/img3.jpg,images/images-card3/img4.jpg,images/images-card3/img5.jpg,images/images-card3/img6.jpg,images/images-card3/img7.jpg,images/images-card3/img8.jpg">
           <div class="category-img-wrap">
-            <img src="images/cat-casa-malla.jpg" alt="Casas Mallas / Maya" class="category-img" loading="lazy" />
+            <img src="images/img3.jpg" alt="Casas Maya" class="category-img" loading="lazy" />
             <span class="category-badge">Casas Mallas</span>
           </div>
           <div class="category-body">
-            <h3 class="category-title">Casas Mallas / Maya</h3>
-            <p class="category-desc">Estructuras cubiertas con malla antiáfida o Raschel para cultivos que requieren
-              protección contra insectos y regulación de luz solar.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="category-title">Casas Malla</h3>
+            <p class="category-desc cat-desc-full">Una casa malla (también conocida como sombra o shade house) es una
+              estructura agrícola ligera, totalmente cubierta por mallas permeables en lugar de plástico. Su función
+              principal es modificar el microclima al reducir la intensidad de la radiación solar, bajar la velocidad
+              del viento y actuar como una barrera física impenetrable contra plagas insectiles. Es la solución de
+              protección más rentable y eficiente para regiones de climas cálidos, semiáridos o tropicales, ideal para
+              el cultivo de hortalizas, plantas ornamentales, follajes y propagación de plántulas.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 4 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="galeria" data-modal-title="Macro Túneles"
+          data-modal-images="images/images-card4/img1.jpg,images/images-card4/img2.png,images/images-card4/img3.png,images/images-card4/img4.png">
           <div class="category-img-wrap">
-            <img src="images/cat-macro-tunel.jpg" alt="Macro Túneles" class="category-img" loading="lazy" />
+            <img src="images/img6.jpg" alt="Macro Túneles" class="category-img" loading="lazy" />
             <span class="category-badge">Macro Túneles</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Macro Túneles</h3>
-            <p class="category-desc">Solución versátil para cultivos de frutillas, hortalizas y flores. Estructura
-              liviana, fácil instalación, con cobertura plástica o malla según requerimiento.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc cat-desc-full">Un macrotúnel agrícola es una estructura de protección estacional de
+              tamaño mediano y arcos curvos, diseñada para cubrir múltiples hileras de cultivos directamente en el
+              suelo. A diferencia de un invernadero tradicional, destaca por su versatilidad, su rápida instalación y su
+              alta rentabilidad. Es la solución ideal para la producción intensiva de frutos rojos (berries),
+              hortalizas, flores y plantas de vivero, protegiendo las plantas contra heladas, granizadas, viento y
+              radiación solar excesiva.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 5 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="plastico"
+          data-modal-title="Plásticos Agrícolas (Agro Film)"
+          data-modal-images="images/images-card5/img1.png,images/images-card5/img2.png"
+          data-modal-sections="DESCRIPCIÓN:::Plástico térmico compuesto de resinas poliméricas especiales que contienen un Co-Polímero EVA y cargas minerales, por lo que la transmisión y difusión de la luz son muy altas. Manteniendo las condiciones de luminosidad más apropiadas para la actividad fotosintética.;;;CARACTERÍSTICAS TÉCNICAS:::- Estabilizado a la radiación ultravioleta.\a- Color: blanco traslúcido / amarillento\a- Composición: Lámina de polietileno de baja densidad (LDPE)\a- Duración aproximada 3 años — 3,300 µm (resistencia al azufre)\a- Gran resistencia mecánica y al envejecimiento\a- Proporciona un microclima constante">
           <div class="category-img-wrap">
-            <img src="images/cat-plastico.jpg" alt="Plásticos Agrícolas Agro Film" class="category-img"
-              loading="lazy" />
+            <img src="images/img4.jpg" alt="Plásticos Agrícolas Agro Film" class="category-img" loading="lazy" />
             <span class="category-badge">Agro Film</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Plásticos Agrícolas (Agro Film)</h3>
-            <p class="category-desc">Lámina LDPE estabilizada a UV, color blanco traslúcido. Anchos: 4, 5, 6, 8 y 10 m.
-              Calibre 8 (200 µm) y calibre 10 (250 µm). Rollos de 50 y 100 m. Duración ≈ 3 años.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc">Lámina LDPE con Co-Polímero EVA — alta transmisión y difusión de luz para
+              fotosíntesis óptima. Estabilizada UV, color blanco traslúcido. Anchos: 4, 5, 6, 8 y 10 m.
+              Calibre 8 (200 µm) y calibre 10 (250 µm). Rollos 50 y 100 m. Duración ≈ 3 años.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 6 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="malla"
+          data-modal-title="Mallas y Coberturas"
+          data-modal-images="images/images-card6/img1.png,images/images-card6/img2.png"
+          data-modal-sections="IMPORTANCIA:::Brinda una barrera protectora física contra insectos adversos tales como áfidos y mosca blanca, ya que son vectores que transmiten virus y enfermedades. Brindando una mejor producción y calidad de las plantas, reduciendo en gastos en pesticidas. Además, proporciona protección contra daños climáticos: Viento, lluvia, granizo, heladas, etc.;;;DESCRIPCIÓN:::Las mallas 50 MESH son fabricadas con monofilamentos de alta resistencia, contiene aditivos estabilizantes que ofrece una gran resistencia a la tracción, y con tratamiento UV para una mayor durabilidad.;;;APLICACIONES:::Construcción de casas mallas. Recomendada para prevenir las enfermedades y malformaciones en los cultivos, evitando la entrada de insectos y larvas. Debe ser utilizada en zonas de sombreo, en las paredes de los invernaderos y en otros elementos de aireación.">
           <div class="category-img-wrap">
-            <img src="images/cat-mallas.jpg" alt="Mallas y Coberturas" class="category-img" loading="lazy" />
+            <img src="images/img5.jpg" alt="Mallas y Coberturas" class="category-img" loading="lazy" />
             <span class="category-badge">Mallas</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Mallas y Coberturas</h3>
-            <p class="category-desc">Mallas antiáfidas, polisombras y mallas Raschel para protección y sombreado de
-              cultivos. Diferentes calibres y densidades de sombreo según requerimiento.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc">Mallas antiáfidas 50 MESH de monofilamento con tratamiento UV. Rollo 4×100 m.
+              Protección contra áfidos, mosca blanca, viento, granizo y heladas — reduce gastos en pesticidas y
+              mejora la calidad del cultivo.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
         <!-- Cat 7 -->
-        <article class="category-card">
+        <article class="category-card" data-modal="true" data-modal-layout="malla"
+          data-modal-title="Accesorios Estructurales"
+          data-modal-images="images/images-card7/img1.png,images/images-card7/img2.png"
+          data-modal-sections="IMPORTANCIA:::El perfil sujetador POLIGRAK es de acero galvanizado, esta tecnología facilita la instalación para invernaderos ya sea en zonas urbanas o rurales. El perfil posee un espacio amplio para que el resorte sujete la malla y el plástico.;;;DESCRIPCIÓN:::Consta de la estructura rígida y del resorte, los cuales bloquea plásticos y mallas facilitando el anclaje a la estructura de estos. El resorte posee una buena resistencia y una fuerte elasticidad.;;;APLICACIÓN:::Una vez establecido el invernadero, se tornilla adecuadamente el perfil sujetador POLIGRAK al metal, concreto o madera. Luego se cubre con la malla y el plástico, es importante que se estire bien ya que sujetará estos por efecto de la presión del alambre zig-zag dentro del perfil sujetador.">
           <div class="category-img-wrap">
-            <img src="images/cat-accesorios.jpg" alt="Accesorios Estructurales" class="category-img" loading="lazy" />
+            <img src="images/img-accesorios.jpg" alt="Accesorios Estructurales" class="category-img" loading="lazy" />
             <span class="category-badge">Accesorios</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Accesorios Estructurales</h3>
-            <p class="category-desc">Perfiles sujetadores, alambres Zig Zag, canales metálicos de 4.2 m, tubo
-              galvanizado de 9 m, capiteles, cartelas y todo lo necesario para el montaje.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc">Perfil sujetador Poligrak de acero galvanizado, alambre Zig Zag, canaleta de
+              drenaje pluvial (lámina galvanizada, largo 4 m, calibre 18), cables de empalme y todo lo necesario
+              para el montaje de tu estructura.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <!-- Cat 8 — using Picsum placeholder -->
-        <article class="category-card">
+        <!-- Cat 8 -->
+        <article class="category-card" data-modal="true" data-modal-layout="mecanico"
+          data-modal-title="Componentes Mecánicos"
+          data-modal-images="images/images-card8/img1.jpg,images/images-card8/img2.jpg,images/images-card8/img3.jpg,images/images-card8/img4.jpg,images/images-card8/img5.jpg,images/images-card8/img_6.png,images/images-card8/img7.png"
+          data-modal-sections="Motorreductores cenital y cortinas laterales||right||0||Eje de salida doble, dos lados que funcionan para el sistema de cribado.~~Rendimiento compacto y confiable, fácil de instalar y operar.~~Rendimiento confiable del auto bloqueo inverso con dispositivo de control de recorrido.~~Puede controlarse automáticamente con el sistema de control.~~3 años de garantía de calidad.;;;Carrete de película eléctrico GMA/GMD||dual||1,2||Resistencia en 360 grados a prueba de lluvia, sin acumulación de agua en ningún ángulo.~~El motor viene con función de protección anti sobrecarga y antibloqueo. Diseño de doble límite para proteger la seguridad del sistema de desplazamiento.~~Bajo nivel de ruido, alto torque, ahorro de energía.~~Extremo del eje de salida reforzado, resistente y duradero.~~Tres años de garantía para toda la máquina, cinco años de tasa de falla de menos del 5%.~~Con orificios de drenaje anti condensación, nivel de protección IP5 (a prueba de polvo e impermeable).~~Voltaje de seguridad DC 24, no hay necesidad de preocuparse por la seguridad de la electricidad.;;;Enrollador de película manual NS105||right||3||Fácil de instalar y operar.~~Gran par de salida y peso ligero.~~Ventilación lateral para invernadero.~~Rendimiento confiable de auto bloqueo.~~Amplia aplicación para invernaderos, ganadería, etc.~~3 años de garantía de calidad.;;;Bobinador de película manual NSA105||left||4||Fácil de instalar y operar.~~Agregue el engranaje de transición en el sistema de transmisión con un rendimiento más estable.~~Gran relación de velocidad y par de salida, peso ligero. Rendimiento confiable de auto bloqueo.~~Ventilación lateral para posición alta.~~3 años de garantía de calidad.;;;Coches de Tracción Manual||dual||5,6||Coche de tracción manual y dirección trasera.~~Incluye de serie:~~Medida: 1.70 x 60 cm~~Peldaños desmontables~~Ruedas 4.00-8 neumática">
           <div class="category-img-wrap">
-            <img src="https://picsum.photos/seed/motor42/600/400" alt="Componentes Mecánicos" class="category-img"
-              loading="lazy" />
+            <img src="images/img-mecanico.jpg" alt="Componentes Mecánicos" class="category-img" loading="lazy" />
             <span class="category-badge">Mecánicos</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Componentes Mecánicos</h3>
-            <p class="category-desc">Motoreductores para ventanas de cortina, ventiladores extractores y paneles de
-              enfriamiento evaporativo para control automatizado de temperatura.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc">Motorreductores GMA/GMD para ventanas cenitales y cortinas laterales. Protección
+              IP5, voltaje DC 24 V, función antisobrecarga y antibloqueo, bajo ruido, alto torque. Garantía
+              3 años.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <!-- Cat 9 — using Picsum placeholder -->
-        <article class="category-card">
+        <!-- Cat 9 -->
+        <article class="category-card" data-modal="true" data-modal-layout="tensor"
+          data-modal-title="Tensores Galvanizados (Tiranvid)"
+          data-modal-images="images/images-card9/img1.png,images/images-card9/img2.png,images/images-card9/img3.png"
+          data-modal-specs="El tensor galvanizado para cable de acero es de fácil instalación y funcionamiento ya que solo necesita la introducción del cable y voltear sus salientes para tensar el cable metálico o alambre según nuestras necesidades.|Destacar que toda pieza de acero cuenta con su capa de galvanizado según las normas UNE EN 103505-5 y UNE EN ISO 1461 con el fin de proteger al metal del efecto de la corrosión.">
           <div class="category-img-wrap">
-            <img src="https://picsum.photos/seed/cable33/600/400" alt="Accesorios de Fijación y Tensado"
-              class="category-img" loading="lazy" />
+            <img src="images/img-accesorio.jpg" alt="Accesorios de Fijación y Tensado" class="category-img"
+              loading="lazy" />
             <span class="category-badge">Fijación</span>
           </div>
           <div class="category-body">
             <h3 class="category-title">Accesorios de Fijación y Tensado</h3>
-            <p class="category-desc">Cables acerados, grilletes, anclajes, tirambit y todos los elementos de sujeción
-              para garantizar la integridad estructural de tu invernadero.</p>
-            <a href="#contacto" class="category-link">Ver productos <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="category-desc">Tensores galvanizados Tiranvid (norma ISO 1461), engrapadora SPECOPS M68E Elite
+              con grapas 1/4" y 3/8", cables acerados y grilletes para garantizar la integridad estructural de
+              tu invernadero.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <!-- Cat 11 -->
+        <article class="category-card" data-modal="true" data-modal-layout="canal" data-modal-title="Canales Metálicos"
+          data-modal-images="images/images-card11/img1.png,images/images-card11/img2.png"
+          data-modal-footer="Función: Canal de aguas de lluvia."
+          data-modal-specs="Código: 839|Nombre: IEP-77B Canalón central multitunel 5m/ud galv. caliente|Código: 840|Nombre: IEP-77C Canalón lateral multitunel 4m/ud galv. caliente|Código: 407|Nombre: IEP-77D Canalón lateral multitunel 5m/ud galv. caliente|Código: 1285|Nombre: IEP-77E Canalón lateral multitunel 5m/ud galv. caliente con salida|Código: 1286|Nombre: IEP-77F Canalón central multitunel 5m/ud galv. caliente con salida">
+          <div class="category-img-wrap">
+            <img src="images/img-canales.png" alt="Canales Metálicos" class="category-img" loading="lazy" />
+            <span class="category-badge">Canales</span>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">Canales Metálicos</h3>
+            <p class="category-desc">Canalones galvanizados en caliente para aguas de lluvia en invernaderos multitunel.
+              Modelos IEP-77B al IEP-77F — central y lateral, 4 m y 5 m, con y sin salida.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Cat 12 -->
+        <article class="category-card" data-modal="true" data-modal-layout="grapas"
+          data-modal-title="Grapadora de Alambre Pesado M68E Elite"
+          data-modal-images="images/images-card12/img1.png,images/images-card12/img2.png,images/images-card12/img3.png"
+          data-modal-specs="Diseño de carga superior para una recarga ultrarrápida|El funcionamiento suave y sin atascos elimina los frustrantes atascos de grapas|Tecnología de accionamiento con esfuerzo reducido para grapar con mayor facilidad materiales duros|Utiliza grapas de precisión M68-501914-6M (corona 7/16 pulg. x pata 1/4 pulg.) o M68-501938-5M (corona 7/16 pulg. x pata 3/8 pulg.); similares a STCR5019">
+          <div class="category-img-wrap">
+            <img src="images/img-grapas.png" alt="Grapas y Engrapadores" class="category-img" loading="lazy" />
+            <span class="category-badge">Engrapado</span>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">Grapas y Engrapadores</h3>
+            <p class="category-desc">Grapadora de alambre pesado SPECOPS M68E Elite — carga superior ultrarrápida,
+              funcionamiento suave sin atascos. Compatible con grapas de precisión 1/4" y 3/8" para materiales duros.
+            </p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Cat 13 -->
+        <article class="category-card" data-modal="true" data-modal-layout="cable"
+          data-modal-title="Cable de Acero de 7 Hilos"
+          data-modal-images="images/images-card13/img1.jpg,images/images-card13/img2.jpg"
+          data-modal-sections="PRESENTACION:::Cable bobinado sobre carrete de madera, cubierto por forro de stretch film para su conservación. Amarre plástico que une la punta de inicio al carrete. Etiqueta para su identificación.;;;APLICACIONES Y USOS:::Utilizado principalmente en la línea agroindustrial y línea de fibra óptica.\a- Tensión de postes\a- Cable de guarda\a- Cable mensajero\a- Cable soporte para invernadero\a- Cable para sector agrícola">
+          <div class="category-img-wrap">
+            <img src="images/img-cables.png" alt="Cables de Empalme" class="category-img" loading="lazy" />
+            <span class="category-badge">Cables</span>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">Cables acerados</h3>
+            <p class="category-desc">Cordón de acero triple galvanizado 1×7 hilos, Ø 5 mm. Resistencia total
+              2710–2810 Kg, recubrimiento de zinc 150 g/m², norma ASTM A475. Para tensores de postes, cables
+              de guarda y cable mensajero.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Cat 14 -->
+        <article class="category-card" data-modal="true" data-modal-layout="ventilador"
+          data-modal-title="Accesorios de Circulación de Aire"
+          data-modal-images="images/images-card14/img1.jpg,images/images-card14/img2.jpg,images/images-card14/img3.jpg,images/images-card14/img4.jpg,images/images-card14/img5.png,images/images-card14/img6.png"
+          data-modal-sections="Ventilador de Cesta||right||0||DESCRIPCIÓN:::Corriente ancha de aire con efecto &quot;viento fresco&quot;. Aplicaciones industriales, agrícolas y ganaderas. Protección IP55, procedencia Holanda.~~~CARACTERÍSTICAS:::Diámetro 71 cm · Voltaje 230V · 1130 RPM · Consumo 480W · 3 aspas · Temperatura -25 a 40°C · Peso 22.9 kg.~~~USO:::Todo tipo de invernaderos. Ambientes de baja altura, instalación desde 2.7 m.;;;Ventilador Vertical (V-FLOFAN)||left||1||DESCRIPCIÓN:::Mueve capas de aire desde el suelo hasta las partes altas del invernadero. Mezcla el aire caliente con el frío y controla la humedad a nivel de raíces.~~~CARACTERÍSTICAS:::Diseño aerodinámico de bajo consumo eléctrico. Color blanco reflectante. Fácil montaje, materiales resistentes a la corrosión.~~~USO:::Secadores solares de café y cacao. Invernaderos con cultivos densos e indeterminados. Secado de frutas secas y ajíes paprika.;;;Ventilador Multifan||right||2||DESCRIPCIÓN:::Expulsa aire horizontalmente en grandes distancias garantizando uniformidad climática. Reduce diferencias de temperatura y enfermedades por concentración de humedad.~~~CARACTERÍSTICAS:::Alta resistencia en condiciones adversas. Modelos de 40, 45 y 50 cm de diámetro. Mezcla aire caliente/frío uniformizando la temperatura del invernadero.~~~USO:::Invernaderos, agroindustria, ganadería, producción de lácteos. Se instala en la pared o en el techo de la estructura.;;;Extractor de Aire||left||3||DESCRIPCIÓN:::Extrae el aire caliente del ambiente con diseño compacto y aerodinámico. Mantiene temperatura y humedad óptimas para el máximo rendimiento del cultivo.~~~CARACTERÍSTICAS:::Acero galvanizado con protección trasera. Tres hélices de polipropileno con fibra de vidrio. Motor eficiente, resistente al polvo y al agua. Protección IP55.~~~USO:::Invernaderos, galpones de aves, criaderos de porcinos, talleres y fábricas. Para cuando los recirculadores de aire no son suficientes.;;;Panel Enfriador de Celulosa||dual-right||4,5||DESCRIPCIÓN:::Los paneles enfriadores son un componente esencial para el sistema de enfriamiento evaporativo. Fabricados de papel kraft de alta hidroscopicidad, se utilizan para enfriamiento, humidificación y filtrado del aire. Sustitución recomendada cada dos años.~~~CARACTERÍSTICAS:::Papel kraft absorbente, resistencia a la corrosión y larga vida útil · Eficiencia de evaporación hasta el 80% · Absorción natural de agua, rápida difusión · Sin tensioactivos ni productos químicos nocivos · Fácil instalación.~~~ESPECIFICACIONES:::Ancho: 10 cm · Alto: 117 cm · Largo: 110 cm · Peso: 4 Kg · Certificación: ISO · Garantía: 6 meses.">
+          <div class="category-img-wrap">
+            <img src="images/img-ventilador.png" alt="Accesorios de Circulación de Aire" class="category-img"
+              loading="lazy" />
+            <span class="category-badge">Ventilación</span>
+          </div>
+          <div class="category-body">
+            <h3 class="category-title">Accesorios para invernaderos climatizados</h3>
+            <p class="category-desc">Ventiladores de cesta, vertical, multifan y extractores de aire para
+              invernaderos.
+              Soluciones de circulación y ventilación de alta eficiencia.</p>
+            <a href="#" class="category-link cat-modal-trigger">Ver productos <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
         </article>
 
       </div>
+
+      <div class="cat-ver-mas-wrap">
+        <button class="btn btn-outline cat-ver-mas-btn" id="cat-ver-mas" aria-expanded="false" aria-controls="categories-grid">
+          Ver más <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+
     </div>
   </section>
 
   <!-- =====================================================
-       WHY CHOOSE US
+       NOSOTROS — MISIÓN Y VISIÓN
        ===================================================== -->
-  <section class="why-us" id="nosotros" aria-label="Por qué elegir AgroPerú">
+  <section class="nosotros" id="nosotros" aria-label="Quiénes somos">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">Nuestras Ventajas</span>
-        <h2 class="section-title">¿Por Qué Elegir AgroPerú?</h2>
-        <p class="section-subtitle">
-          Somos tu aliado estratégico en agricultura protegida con más de una década de experiencia en el mercado
-          peruano.
-        </p>
+
+      <!-- Intro: texto + imagen -->
+      <div class="nosotros-intro">
+        <div class="nosotros-text">
+          <h2 class="why-us-heading">Por qué Invernaderos Peru</h2>
+          <ul class="why-list">
+            <li>
+              <span><strong>Más de 20 años de experiencia liderando</strong> proyectos de invernaderos y soluciones
+                agrícolas en el <strong>Perú</strong>.</span>
+            </li>
+
+            <li>
+              <span><strong>Asesoría personalizada para diseñar</strong> la solución ideal según tu cultivo, terreno y
+                presupuesto.
+              </span>
+            </li>
+
+            <li>
+              <span><strong>Calidad estructural garantizada, fabricada con materiales de alta durabilidad</strong> y
+                resistencia para el
+                campo
+                peruano.
+              </span>
+            </li>
+
+            <li>
+              <span><strong>Compromiso con el agricultor peruano, con atención cercana, honestidad</strong> y
+                cumplimiento en cada entrega.
+              </span>
+            </li>
+
+            <li>
+              <span><strong>Soporte técnico postventa</strong>, orientado al acompañamiento y la fiabilidad a largo
+                plazo de
+                cada proyecto.
+              </span>
+            </li>
+
+          </ul>
+        </div>
+        <div class="nosotros-image">
+          <img src="images/img-nosotros.png" alt="Proyecto de invernadero Grupo IAP" />
+        </div>
       </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-industry"></i></div>
-          <h3 class="why-title">Fabricación Propia</h3>
-          <p class="why-desc">Controlamos cada etapa del proceso productivo para garantizar la calidad y los tiempos de
-            entrega comprometidos.</p>
+
+      <!-- Misión y Visión -->
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+          <h3>Nuestra Misión</h3>
+          <p>Brindar soluciones integrales de alta calidad para la agricultura protegida en el Perú, fabricando y
+            comercializando estructuras, plásticos agrícolas y accesorios que impulsen la productividad, reduzcan los
+            riesgos del campo y mejoren la calidad de vida del agricultor peruano.</p>
         </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-certificate"></i></div>
-          <h3 class="why-title">Materiales de Alta Calidad</h3>
-          <p class="why-desc">Tubo galvanizado certificado, perfiles de acero tratado y plásticos con estabilización UV
-            para máxima durabilidad.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-          <h3 class="why-title">Cobertura Nacional</h3>
-          <p class="why-desc">Atendemos proyectos en las 25 regiones del Perú con despacho a nivel nacional y
-            seguimiento personalizado.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
-          <h3 class="why-title">Asesoría Técnica</h3>
-          <p class="why-desc">Nuestro equipo de ingenieros agrónomos te acompaña desde el diseño inicial hasta la
-            instalación y puesta en marcha.</p>
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+          <h3>Nuestra Visión</h3>
+          <p>Ser la empresa referente en agricultura protegida del Perú, reconocida por la calidad de nuestras
+            estructuras, la confianza de nuestros clientes y el compromiso con el desarrollo sostenible del agro
+            peruano; expandiendo nuestra presencia a nivel nacional.</p>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -499,51 +712,80 @@
         <!-- Producto 1 -->
         <article class="product-card" data-category="invernaderos">
           <div class="product-img-wrap">
-            <img src="images/hero-1.jpg" alt="Invernadero Metálico de Alta Tecnología" class="product-img"
+            <img src="images/img_2.jpg" alt="Invernadero Multitunel Alta Tecnología" class="product-img"
               loading="lazy" />
             <span class="product-tag-cat">Invernaderos</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">Invernadero Metálico Alta Tecnología</h3>
-            <p class="product-desc">Estructura de acero galvanizado con sistema de clima controlado, ventanas cenitales
-              automáticas y paneles de enfriamiento evaporativo.</p>
+            <h3 class="product-name">Invernadero Multitunel Alta Tecnología</h3>
+            <p class="product-desc">Ventilación cenital y lateral automatizada, sensores y ordenador de control
+              climático. Altura bajo canal 4 m, altura intermedia 6.30 m. Sistema de riego por goteo integrado.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20el%20Invernadero%20Multitunel%20Alta%20Tecnología."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 1b -->
+        <article class="product-card" data-category="invernaderos">
+          <div class="product-img-wrap">
+            <img src="images/img2.jpg" alt="Invernadero de Media y Baja Tecnología" class="product-img"
+              loading="lazy" />
+            <span class="product-tag-cat">Invernaderos</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Invernadero Media/Baja Tecnología</h3>
+            <p class="product-desc">Estructura de tubo galvanizado o perfil metálico adaptable a cualquier terreno.
+              Solución accesible para pequeños y medianos productores con cobertura plástica de alta duración.</p>
+            <div class="product-actions">
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20el%20Invernadero%20Media/Baja%20Tecnología."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
 
         <!-- Producto 2 -->
-        <article class="product-card" data-category="invernaderos">
+        <article class="product-card" data-category="accesorios">
           <div class="product-img-wrap">
-            <img src="images/cat-macro-tunel.jpg" alt="Macro Túnel Estándar" class="product-img" loading="lazy" />
-            <span class="product-tag-cat">Invernaderos</span>
+            <img src="images/img-accesorios.jpg" alt="Perfil Poligrak y Alambre Zigzag" class="product-img"
+              loading="lazy" />
+            <span class="product-tag-cat">Accesorios</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">Macro Túnel Estándar</h3>
-            <p class="product-desc">Estructura de arco liviana y resistente, ideal para frutillas, hortalizas y flores.
-              Fácil instalación con cobertura plástica incluida.</p>
+            <h3 class="product-name">Perfil Poligrak + Alambre Zigzag</h3>
+            <p class="product-desc">Perfil sujetador de acero galvanizado para fijar plásticos y mallas por presión
+              del resorte zigzag. Instalación en metal, concreto o madera. Resistencia y elasticidad garantizada.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20el%20Perfil%20Poligrak%20y%20Alambre%20Zigzag."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
 
         <!-- Producto 3 -->
-        <article class="product-card" data-category="invernaderos">
+        <article class="product-card" data-category="accesorios">
           <div class="product-img-wrap">
-            <img src="images/cat-casa-malla.jpg" alt="Casa Malla Antiáfida" class="product-img" loading="lazy" />
-            <span class="product-tag-cat">Invernaderos</span>
+            <img src="images/img-accesorio.jpg" alt="Tensores Galvanizados Tiranvid" class="product-img"
+              loading="lazy" />
+            <span class="product-tag-cat">Accesorios</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">Casa Malla Antiáfida</h3>
-            <p class="product-desc">Estructura metálica cubierta con malla antiáfida de alta densidad para protección
-              total contra insectos y plagas en cultivos sensibles.</p>
+            <h3 class="product-name">Tensores Galvanizados Tiranvid</h3>
+            <p class="product-desc">Tensor para cable de acero de fácil instalación. Galvanizado bajo normas
+              UNE EN ISO 1461 para máxima protección contra corrosión. Tensan alambre metálico con solo
+              voltear sus salientes.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20los%20Tensores%20Galvanizados%20Tiranvid."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
@@ -551,16 +793,19 @@
         <!-- Producto 4 -->
         <article class="product-card" data-category="plasticos">
           <div class="product-img-wrap">
-            <img src="images/cat-plastico.jpg" alt="Agro Film LDPE 200 micras" class="product-img" loading="lazy" />
+            <img src="images/img_AgroFilm.jpg" alt="Agro Film LDPE 200 micras" class="product-img" loading="lazy" />
             <span class="product-tag-cat">Plásticos</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">Agro Film LDPE 200 µm — 8m × 100m</h3>
-            <p class="product-desc">Lámina de polietileno de baja densidad, calibre 8 (200 µm), 8 m de ancho, rollo de
-              100 m. Estabilizado UV. Duración aprox. 3 años.</p>
+            <h3 class="product-name">Agro Film LDPE — Calibre 8 (200 µm) · 8m × 100m</h3>
+            <p class="product-desc">Lámina LDPE con Co-Polímero EVA. Alta transmisión y difusión de luz para
+              fotosíntesis óptima. Estabilizado UV, color blanco traslúcido. Calibre 8 (200 µm), 8 m de ancho,
+              rollo 100 m. Duración aprox. 3 años.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20el%20Agro%20Film%20LDPE%20Calibre%208."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
@@ -568,7 +813,7 @@
         <!-- Producto 5 -->
         <article class="product-card" data-category="mallas">
           <div class="product-img-wrap">
-            <img src="images/cat-mallas.jpg" alt="Malla Antiáfida 50 mesh" class="product-img" loading="lazy" />
+            <img src="images/img_malla.jpg" alt="Malla Antiáfida 50 mesh" class="product-img" loading="lazy" />
             <span class="product-tag-cat">Mallas</span>
           </div>
           <div class="product-body">
@@ -576,8 +821,10 @@
             <p class="product-desc">Malla de alta densidad (50 x 25 hilos/cm²) para bloqueo de insectos voladores y
               áfidos. Ideal para casas mallas y ventanas de invernadero.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20la%20Malla%20Antiáfida%2050%20Mesh."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
@@ -585,17 +832,19 @@
         <!-- Producto 6 -->
         <article class="product-card" data-category="accesorios">
           <div class="product-img-wrap">
-            <img src="https://picsum.photos/seed/motor99/600/400" alt="Motoreductor para ventana de cortina"
-              class="product-img" loading="lazy" />
+            <img src="images/img-mecanico.jpg" alt="Motorreductor GMA/GMD para invernadero" class="product-img"
+              loading="lazy" />
             <span class="product-tag-cat">Accesorios</span>
           </div>
           <div class="product-body">
-            <h3 class="product-name">Motoreductor para Ventana de Cortina</h3>
-            <p class="product-desc">Motor eléctrico de apertura/cierre automático de ventanas laterales y cenitales.
-              Compatible con sistemas de climatización y control remoto.</p>
+            <h3 class="product-name">Motorreductor GMA/GMD — Cenital y Cortina Lateral</h3>
+            <p class="product-desc">Apertura/cierre automático de ventanas cenitales y laterales. Protección IP5,
+              voltaje DC 24 V, antisobrecarga y antibloqueo, bajo ruido, alto torque. Garantía 3 años.</p>
             <div class="product-actions">
-              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice"></i> Cotizar</a>
-              <a href="#contacto" class="btn btn-outline btn-sm">Ver detalles</a>
+              <a href="#contacto" class="btn btn-primary btn-sm"><i class="fa-solid fa-file-invoice" aria-hidden="true"></i> Cotizar</a>
+              <a href="https://wa.me/51975068425?text=Hola,%20quisiera%20información%20sobre%20el%20Motorreductor%20GMA/GMD."
+                class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Consultar</a>
             </div>
           </div>
         </article>
@@ -619,119 +868,151 @@
 
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="images/hero-1.jpg" alt="Invernadero metálico de alta tecnología instalado" loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/cat-invernadero-alta.jpg" alt="Interior de invernadero con clima controlado"
+          <img src="images/proyects/proyecto-01.jpg" alt="Proyecto de invernadero ejecutado por Invernaderos Peru"
             loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
         </div>
         <div class="gallery-item">
-          <img src="images/cat-macro-tunel.jpg" alt="Campo de macro túneles para frutillas" loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/cat-casa-malla.jpg" alt="Casa malla antiáfida instalada" loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/hero-3.jpg" alt="Vista aérea de complejo de invernaderos" loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/cat-invernadero-media.jpg" alt="Invernadero de media tecnología con cultivos"
+          <img src="images/proyects/proyecto-02.jpg" alt="Instalación de estructura agrícola Invernaderos Peru"
             loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
         </div>
         <div class="gallery-item">
-          <img src="https://picsum.photos/seed/agro77/600/500" alt="Proyecto de invernadero en sierra peruana"
+          <img src="images/proyects/proyecto-03.jpg" alt="Proyecto de agricultura protegida Invernaderos Peru"
             loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
         </div>
         <div class="gallery-item">
-          <img src="https://picsum.photos/seed/agro88/600/400" alt="Instalación de estructura metálica de invernadero"
+          <img src="images/proyects/proyecto-04.jpg" alt="Invernadero instalado por equipo Invernaderos Peru"
             loading="lazy" />
-          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/proyects/proyecto-05.jpg" alt="Estructura agrícola completada Invernaderos Peru"
+            loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/proyects/proyecto-06.jpg" alt="Proyecto ejecutado por Invernaderos Peru en Perú"
+            loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- =====================================================
+       VIDEO REEL — PROYECTOS EN MOVIMIENTO
+       ===================================================== -->
+  <section class="video-reel" aria-label="Videos de proyectos ejecutados">
+    <div class="video-reel-header">
+      <h2 class="section-title">Nuestros Proyectos en Acción</h2>
+      <p class="section-tag">Click en cualquier video para reproducción</p>
+    </div>
+    <div class="video-reel-track-wrap">
+      <div class="video-reel-track">
+        <!-- Set 1 -->
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-01.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-02.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-03.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-04.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-05.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-06.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-07.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <!-- Set 2 — duplicado para loop infinito -->
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-01.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-02.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-03.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-04.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-05.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-06.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="reel-item">
+          <video autoplay muted loop playsinline preload="none">
+            <source src="images/proyects/video-07.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Lightbox -->
+  <div class="video-lightbox" id="video-lightbox" role="dialog" aria-modal="true" aria-label="Video ampliado">
+    <div class="video-lightbox-content">
+      <button class="video-lightbox-close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <video class="video-lightbox-player" controls autoplay>
+        <source src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- Category Product Modal -->
+  <div class="cat-modal" id="cat-modal" role="dialog" aria-modal="true">
+    <div class="cat-modal-content">
+      <button class="cat-modal-close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+  </div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
-    <button class="lightbox-prev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-prev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
     <div class="lightbox-content">
-      <button class="lightbox-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox-close" aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
       <img class="lightbox-img" src="" alt="" />
     </div>
-    <button class="lightbox-next" aria-label="Siguiente imagen"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="lightbox-next" aria-label="Siguiente imagen"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
   </div>
-
-  <!-- =====================================================
-       TESTIMONIALS
-       ===================================================== -->
-  <section class="testimonials" id="testimonios" aria-label="Testimonios de clientes">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">Lo que Dicen Nuestros Clientes</span>
-        <h2 class="section-title">Testimonios de Agricultores y Empresas</h2>
-        <p class="section-subtitle">
-          La satisfacción de nuestros clientes es el mejor respaldo de nuestra calidad y servicio.
-        </p>
-      </div>
-
-      <div class="testimonials-grid">
-
-        <div class="testimonial-card">
-          <div class="test-stars">★★★★★</div>
-          <p class="test-text">
-            "Contratamos a AgroPerú para la construcción de 2 hectáreas de invernadero de alta tecnología en Ica. El
-            equipo fue puntual, profesional y el resultado superó nuestras expectativas. El sistema de climatización
-            funciona perfecto."
-          </p>
-          <div class="test-author">
-            <div class="test-avatar">C</div>
-            <div>
-              <div class="test-name">Carlos Mejía Quispe</div>
-              <div class="test-company">Agrícola Santa Rosa — Ica, Perú</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="test-stars">★★★★★</div>
-          <p class="test-text">
-            "El plástico Agro Film que compramos tiene una calidad excelente. Ya llevamos 2 temporadas y se mantiene en
-            perfectas condiciones. El servicio de postventa también es muy bueno, siempre atentos."
-          </p>
-          <div class="test-author">
-            <div class="test-avatar">M</div>
-            <div>
-              <div class="test-name">María Fernández Torres</div>
-              <div class="test-company">Fundo Los Álamos — La Libertad, Perú</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="test-stars">★★★★★</div>
-          <p class="test-text">
-            "Trabajamos con AgroPerú para instalar casas mallas en nuestra exportación de pimientos. La asesoría técnica
-            fue fundamental para elegir el tipo de malla correcto. 100% recomendados para proyectos de exportación."
-          </p>
-          <div class="test-author">
-            <div class="test-avatar">J</div>
-            <div>
-              <div class="test-name">Ing. Jorge Villanueva</div>
-              <div class="test-company">AgroExport Andina S.A.C. — Lima, Perú</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- =====================================================
        CONTACT / QUOTE FORM
@@ -740,7 +1021,7 @@
     <div class="container">
       <div class="section-header center">
         <span class="section-tag">Hablemos de tu Proyecto</span>
-        <h2 class="section-title">Solicita tu Cotización Gratuita</h2>
+        <h2 class="section-title">Solicita tu Cotización</h2>
         <p class="section-subtitle">
           Cuéntanos sobre tu proyecto y uno de nuestros especialistas te contactará en menos de 24 horas.
         </p>
@@ -803,10 +1084,10 @@
               <span class="form-error" id="error-mensaje"></span>
             </div>
             <button type="submit" class="btn btn-primary form-submit">
-              <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar Solicitud
             </button>
-            <div class="form-success">
-              <i class="fa-solid fa-circle-check"></i> ¡Solicitud enviada! Nos comunicaremos contigo en menos de 24
+            <div class="form-success" role="status" aria-live="polite">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> ¡Solicitud enviada! Nos comunicaremos contigo en menos de 24
               horas.
             </div>
           </form>
@@ -817,15 +1098,15 @@
           <h3 class="contact-info-title">Información de Contacto</h3>
 
           <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
             <div>
               <div class="contact-item-label">Dirección</div>
-              <div class="contact-item-value">Av. La Agricultura 123, Lima, Perú<br>Zona Industrial — Ate Vitarte</div>
+              <div class="contact-item-value">Carabayllo, Lima, Perú</div>
             </div>
           </div>
 
           <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
             <div>
               <div class="contact-item-label">Teléfono</div>
               <div class="contact-item-value">
@@ -835,7 +1116,7 @@
           </div>
 
           <div class="contact-item">
-            <div class="contact-icon" style="background:#25D366;"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-icon" style="background:#25D366;"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
             <div>
               <div class="contact-item-label">WhatsApp</div>
               <div class="contact-item-value">
@@ -846,7 +1127,7 @@
           </div>
 
           <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
             <div>
               <div class="contact-item-label">Correo electrónico</div>
               <div class="contact-item-value">
@@ -856,7 +1137,7 @@
           </div>
 
           <div class="contact-item">
-            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
             <div>
               <div class="contact-item-label">Horarios de Atención</div>
               <div class="contact-item-value">
@@ -869,12 +1150,21 @@
             </div>
           </div>
 
-          <!-- Map Embed -->
-          <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7!2d-76.9500!3d-12.0300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA0JzA0LjAiUyA3NsKwNTcnMDAuMCJX!5e0!3m2!1ses!2spe!4v1609459200000"
-              title="Ubicación de AgroPerú" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <!-- Redes Sociales -->
+          <div class="contact-socials">
+            <h4 class="contact-socials-title">Síguenos en redes</h4>
+            <div class="contact-social-links">
+              <a href="https://www.facebook.com/share/r/1ETeRtcM2X/" target="_blank" rel="noopener"
+                class="contact-social-btn">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.tiktok.com/@importaciones.agroperu?_r=1&_t=ZS-98koc05ioFx" target="_blank"
+                rel="noopener" class="contact-social-btn tiktok">
+                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                <span>TikTok</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -891,16 +1181,16 @@
 
           <!-- Col 1: Brand -->
           <div class="footer-logo-area">
-            <div class="footer-logo-text"><img src="images/LogoAgroPeru.png" alt="Logo AgroPerú" /></div>
+            <div class="footer-logo-text"><img src="images/LogoAgroPeru.png" alt="Logo Invernaderos Peru" /></div>
             <p class="footer-desc">
               Empresa peruana especializada en la fabricación y comercialización de estructuras para agricultura
               protegida de alta tecnología. Tu aliado en el crecimiento del agro peruano.
             </p>
             <div class="footer-socials">
-              <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://wa.me/51975068425" class="footer-social-link" aria-label="WhatsApp" target="_blank"
-                rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/share/r/1ETeRtcM2X/" class="footer-social-link" aria-label="Facebook"
+                target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://www.tiktok.com/@importaciones.agroperu?_r=1&_t=ZS-98koc05ioFx" class="footer-social-link"
+                aria-label="TikTok" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
               <a href="mailto:imporiap@gmail.com" class="footer-social-link" aria-label="Email"><i
                   class="fa-solid fa-envelope"></i></a>
             </div>
@@ -910,13 +1200,12 @@
           <div>
             <h4 class="footer-col-title">Links Rápidos</h4>
             <nav class="footer-links" aria-label="Links rápidos">
-              <a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a>
-              <a href="#nosotros"><i class="fa-solid fa-chevron-right"></i> Nosotros</a>
-              <a href="#categorias"><i class="fa-solid fa-chevron-right"></i> Productos</a>
-              <a href="#productos"><i class="fa-solid fa-chevron-right"></i> Destacados</a>
-              <a href="#galeria"><i class="fa-solid fa-chevron-right"></i> Galería</a>
-              <a href="#testimonios"><i class="fa-solid fa-chevron-right"></i> Testimonios</a>
-              <a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a>
+              <a href="#inicio"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Inicio</a>
+              <a href="#nosotros"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Nosotros</a>
+              <a href="#categorias"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Productos</a>
+              <a href="#productos"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Destacados</a>
+              <a href="#galeria"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Galería</a>
+              <a href="#contacto"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Contacto</a>
             </nav>
           </div>
 
@@ -925,19 +1214,19 @@
             <h4 class="footer-col-title">Contáctanos</h4>
             <div class="footer-contact-list">
               <div class="footer-contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Av. La Agricultura 123, Ate Vitarte<br />Lima, Perú</p>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <p>Carabayllo, Lima, Perú</p>
               </div>
               <div class="footer-contact-item">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
                 <p><a href="tel:+51975068425">+51 975 068 425</a></p>
               </div>
               <div class="footer-contact-item">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 <p><a href="https://wa.me/51975068425" target="_blank" rel="noopener">+51 975 068 425</a></p>
               </div>
               <div class="footer-contact-item">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                 <p><a href="mailto:imporiap@gmail.com">imporiap@gmail.com</a></p>
               </div>
             </div>
@@ -951,7 +1240,7 @@
       <div class="container">
         <div class="footer-bottom-inner">
           <p class="footer-copy">
-            &copy; 2025 <span>AgroPerú</span>. Todos los derechos reservados.
+            &copy; 2026 <span>Invernaderos Peru</span>. Todos los derechos reservados.
           </p>
           <div class="footer-bottom-links">
             <a href="#">Política de Privacidad</a>
@@ -968,14 +1257,14 @@
   <div class="whatsapp-float" aria-label="Contactar por WhatsApp">
     <span class="whatsapp-tooltip">¡Chatea con nosotros!</span>
     <a href="https://wa.me/51975068425?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20sus%20productos."
-      class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp AgroPerú">
-      <i class="fa-brands fa-whatsapp"></i>
+      class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Invernaderos Peru">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
   </div>
 
   <!-- Back to Top -->
   <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">
-    <i class="fa-solid fa-chevron-up"></i>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
   </button>
 
   <!-- ===== SCRIPTS ===== -->
