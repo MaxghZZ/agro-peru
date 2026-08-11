@@ -3,12 +3,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://www.invernaderossperu.com/</loc>
+    <loc>https://www.invernaderosperu.com/</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.invernaderossperu.com/images/hero-1.jpg</image:loc>
+      <image:loc>https://www.invernaderosperu.com/images/hero-1.jpg</image:loc>
       <image:title>Invernaderos Peru - Agricultura protegida</image:title>
     </image:image>
   </url>
