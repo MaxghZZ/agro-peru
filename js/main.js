@@ -598,23 +598,8 @@ document.addEventListener('DOMContentLoaded', () => {
       : 'Ver más <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>';
   });
 
-  /* ==============================================
-     5. PRODUCT FILTER
-     ============================================== */
-  const filterBtns   = document.querySelectorAll('.filter-btn');
-  const productCards = document.querySelectorAll('.product-card[data-category]');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      productCards.forEach(card => {
-        const match = filter === 'all' || card.dataset.category === filter;
-        card.style.display = match ? '' : 'none';
-      });
-    });
-  });
+  /* La seccion "Productos Destacados" y su filtro se eliminaron
+     (era redundante con "Soluciones para Toda la Cadena Agricola"). */
 
   /* ==============================================
      6. SMOOTH SCROLL
@@ -744,7 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==============================================
      10. CARD HOVER ANIMATION (IntersectionObserver)
      ============================================== */
-  const animatedCards = document.querySelectorAll('.category-card, .product-card, .why-card, .testimonial-card, .mv-card');
+  const animatedCards = document.querySelectorAll('.category-card, .why-card, .testimonial-card, .mv-card');
   const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
