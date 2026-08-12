@@ -244,23 +244,54 @@ button {
 
 .top-bar-socials {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Etiqueta "Síguenos" para que las redes no pasen desapercibidas */
+.top-bar-socials-label {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 2px;
+  white-space: nowrap;
 }
 
 .top-bar-socials a {
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
 }
 
-.top-bar-socials a:hover {
-  background: var(--color-accent);
+/* Color de marca fijo, siempre visible */
+.top-bar-socials a.social-fb { background: #1877F2; }
+.top-bar-socials a.social-tk { background: #010101; }
+.top-bar-socials a.social-yt { background: #FF0000; }
+
+/* Al pasar el mouse solo se agrandan y brillan un poco */
+.top-bar-socials a:hover,
+.top-bar-socials a:focus-visible {
+  transform: translateY(-3px) scale(1.1);
+  filter: brightness(1.15);
   color: #fff;
+}
+
+.top-bar-socials a.social-fb:hover { box-shadow: 0 5px 16px rgba(24, 119, 242, 0.6); }
+.top-bar-socials a.social-tk:hover { box-shadow: 0 5px 16px rgba(0, 0, 0, 0.7); }
+.top-bar-socials a.social-yt:hover { box-shadow: 0 5px 16px rgba(255, 0, 0, 0.6); }
+
+@media (max-width: 600px) {
+  .top-bar-socials-label { display: none; }
+  .top-bar-socials a { width: 30px; height: 30px; font-size: 14px; }
 }
 
 /* =====================================================
