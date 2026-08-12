@@ -7,38 +7,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==============================================
-     1. ANIMATED COUNTERS
-     ============================================== */
-  function animateCounter(el, target, duration = 1800) {
-    const start    = Date.now();
-    const startVal = 0;
-    const tick = () => {
-      const elapsed  = Date.now() - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased    = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      el.textContent = Math.floor(startVal + (target - startVal) * eased);
-      if (progress < 1) requestAnimationFrame(tick);
-      else el.textContent = target;
-    };
-    requestAnimationFrame(tick);
-  }
-
-  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
-  const statsBar    = document.querySelector('.stats-bar');
-  let countersStarted = false;
-
-  const statsObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !countersStarted) {
-      countersStarted = true;
-      statNumbers.forEach(el => {
-        const target = parseInt(el.dataset.target, 10);
-        animateCounter(el, target);
-      });
-    }
-  }, { threshold: 0.4 });
-
-  if (statsBar) statsObserver.observe(statsBar);
+  /* La barra de indicadores (500 proyectos, 15 regiones, etc.)
+     se elimino a pedido del cliente, junto con su contador animado. */
 
   /* ==============================================
      2. STICKY NAVBAR
