@@ -3116,11 +3116,23 @@ textarea.form-control {
   }
 
   .hero-content {
-    margin-left: 24px;
+    margin-left: 0;
+    padding: 0 18px;
+    max-width: 100%;
   }
 
   .hero-title {
     font-size: 26px;
+  }
+
+  /* Botones del hero a ancho completo, mas faciles de tocar */
+  .hero-btns {
+    gap: 10px;
+  }
+
+  .hero-btns .btn {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 
   .hero-subtitle {
@@ -3147,8 +3159,11 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
+  /* 2 columnas: con 30 fotos, una sola columna obliga a un
+     scroll interminable */
   .gallery-grid {
-    columns: 1;
+    columns: 2;
+    column-gap: 12px;
   }
 }
 
@@ -3168,5 +3183,155 @@ textarea.form-control {
   .whatsapp-float {
     bottom: 20px;
     right: 20px;
+  }
+}
+
+/* =====================================================
+   AJUSTES RESPONSIVE — GENERALES
+   ===================================================== */
+@media (max-width: 768px) {
+  /* iOS hace zoom automatico al tocar un campo con letra
+     menor a 16px. Con 16px se evita ese salto molesto. */
+  .form-control {
+    font-size: 16px;
+  }
+
+  /* Botones de redes en contacto: que bajen de linea si
+     no caben, en vez de aplastarse */
+  .contact-social-links {
+    flex-wrap: wrap;
+  }
+
+  .contact-social-btn {
+    flex: 1 1 45%;
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* =====================================================
+   AJUSTES RESPONSIVE — MODALES DE PRODUCTO
+   Correcciones para que ningun layout se desborde
+   ni quede ilegible en pantallas pequenas.
+   ===================================================== */
+@media (max-width: 768px) {
+  /* El modal ocupa mas pantalla y con menos padding para
+     no desperdiciar ancho en moviles */
+  .cat-modal {
+    padding: 10px;
+  }
+
+  .cat-modal-content {
+    padding: 18px 14px;
+    max-height: 94vh;
+    border-radius: var(--radius-md);
+  }
+
+  /* Galeria: una sola columna, imagenes mas bajas */
+  .cat-modal-galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-modal-galeria img {
+    height: auto;
+    max-height: 260px;
+  }
+
+  /* Tensor: las fotos laterales se apilan y bajan de alto */
+  .cat-tensor-side {
+    flex-direction: row;
+  }
+
+  .cat-tensor-side img {
+    height: 130px;
+  }
+
+  /* Canal: la ficha tecnica no debe apretarse */
+  .cat-canal-specs {
+    padding: 14px;
+    font-size: 0.82rem;
+    line-height: 1.8;
+  }
+
+  .cat-canal-product-img {
+    min-height: 180px;
+    padding: 14px;
+  }
+
+  /* Texto: sin ancho maximo que sobre en movil */
+  .cat-modal-texto {
+    max-width: 100%;
+  }
+
+  .cat-texto-title {
+    font-size: 1.1rem;
+  }
+
+  /* Duo: apilado en vez de lado a lado */
+  .cat-modal-duo {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .cat-modal-duo img {
+    height: 240px;
+  }
+
+  /* Mecanico y ventilador: imagenes mas bajas */
+  .cat-mec-img,
+  .cat-vent-img {
+    height: 190px;
+  }
+
+  .cat-mec-imgs-dual img,
+  .cat-vent-imgs-dual img {
+    height: 160px;
+  }
+
+  /* Titulos y textos de modal, un punto mas chicos */
+  .cat-vent-title {
+    font-size: 0.95rem;
+  }
+
+  .cat-mec-title {
+    font-size: 0.95rem;
+  }
+
+  /* Ninguna imagen dentro del modal debe desbordar */
+  .cat-modal-content img {
+    max-width: 100%;
+  }
+
+  /* Tablas/rejillas del modal cable en una columna */
+  .cat-cable-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-cable-box:first-child {
+    border-right: none;
+    border-bottom: 1px solid #444;
+  }
+}
+
+/* Pantallas muy pequenas (celulares de 360px o menos) */
+@media (max-width: 400px) {
+  .cat-modal-content {
+    padding: 14px 10px;
+  }
+
+  .cat-malla-imgs img {
+    height: 140px;
+  }
+
+  .cat-malla-imgs-extra-row img {
+    height: 150px;
+  }
+
+  .cat-modal-galeria img {
+    max-height: 210px;
+  }
+
+  .cat-tensor-side img {
+    height: 100px;
   }
 }
