@@ -2488,6 +2488,73 @@ textarea.form-control {
   transform: rotate(180deg);
 }
 
+/* ---------------------------------------------------------
+   Linea verde que recorre el borde del boton, girando.
+   Llama la atencion sin ser invasiva. Se detiene al
+   expandir el catalogo y al pasar el mouse.
+   --------------------------------------------------------- */
+@property --catVerMasAngle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cat-ver-mas-btn {
+  position: relative;
+  isolation: isolate;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.cat-ver-mas-btn::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  padding: 3px;
+  background: conic-gradient(
+    from var(--catVerMasAngle),
+    transparent 0deg 250deg,
+    rgba(76, 175, 80, 0.5) 290deg,
+    #4CAF50 330deg,
+    #8BC34A 352deg,
+    transparent 360deg
+  );
+  /* Recorta el relleno: solo queda el aro del borde */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: catVerMasSpin 2.4s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes catVerMasSpin {
+  to { --catVerMasAngle: 360deg; }
+}
+
+/* Al expandir o al pasar el mouse, la linea desaparece */
+.cat-ver-mas-btn.expanded::before,
+.cat-ver-mas-btn:hover::before,
+.cat-ver-mas-btn:focus-visible::before {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.cat-ver-mas-btn:hover,
+.cat-ver-mas-btn:focus-visible {
+  transform: translateY(-2px);
+}
+
+/* Respeta a quien prefiere menos movimiento (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+  .cat-ver-mas-btn,
+  .cat-ver-mas-btn i {
+    animation: none !important;
+  }
+}
+
 /* Contact social buttons */
 .contact-socials {
   margin-top: 28px;
