@@ -39,6 +39,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* overflow-x en html Y body: si solo se pone en body, en moviles
+   la pagina igual se puede desplazar de lado */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: var(--font-body);
   font-size: 16px;
@@ -46,6 +53,8 @@ body {
   background: var(--color-bg);
   line-height: 1.65;
   overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 img {
@@ -2617,8 +2626,13 @@ textarea.form-control {
   font-size: 0.95rem;
   text-decoration: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  flex: 1;
+  /* min-width:0 permite que el boton se encoja. Sin esto, el
+     texto impone un ancho minimo y los 3 botones desbordan
+     la pantalla en moviles. */
+  flex: 1 1 0;
+  min-width: 0;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .contact-social-btn:hover {
@@ -2917,11 +2931,23 @@ textarea.form-control {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 850;
+  /* Debe quedar por ENCIMA del header (900) y del boton
+     flotante de WhatsApp (800), o el menu se ve tapado */
+  z-index: 1500;
 }
 
 .mobile-nav.open {
   display: block;
+}
+
+/* Con el menu abierto se ocultan el header, el boton flotante de
+   WhatsApp y el de "volver arriba": si no, se superponen al panel
+   y tapan las primeras opciones (Inicio, Nosotros). */
+body.nav-open .header,
+body.nav-open .whatsapp-float,
+body.nav-open .back-to-top {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-nav-panel {
@@ -3095,16 +3121,40 @@ textarea.form-control {
     display: none;
   }
 
+  /* Sin wrap: logo a la izquierda y hamburguesa a la derecha,
+     siempre en la misma linea */
   .header-inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding: 10px 0;
   }
 
   .header-cta {
     display: none;
   }
 
+  /* Area tactil comoda (minimo 44px, guia de accesibilidad) */
   .hamburger {
     display: flex;
+    justify-content: center;
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+    flex-shrink: 0;
+  }
+
+  /* El contenedor con menos margen lateral aprovecha el ancho */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Logo mas chico: 72px ocupaba media pantalla en el header */
+  .header-logo img {
+    height: 52px;
+  }
+
+  .footer-logo-text img {
+    height: 64px;
   }
 
   .navbar {
@@ -3164,6 +3214,24 @@ textarea.form-control {
   .gallery-grid {
     columns: 2;
     column-gap: 12px;
+  }
+
+  /* Secciones menos altas: 80px arriba y abajo es demasiado
+     en una pantalla de celular */
+  .categories,
+  .nosotros,
+  .gallery,
+  .contact,
+  .video-reel {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  /* Nada puede desbordar horizontalmente */
+  img,
+  video,
+  iframe {
+    max-width: 100%;
   }
 }
 

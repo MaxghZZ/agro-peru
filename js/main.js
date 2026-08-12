@@ -45,11 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openMobileNav() {
     mobileNav?.classList.add('open');
+    // La clase en <body> oculta header y botones flotantes para
+    // que no se superpongan al panel del menu
+    document.body.classList.add('nav-open');
     document.body.style.overflow = 'hidden';
     hamburger?.setAttribute('aria-expanded', 'true');
   }
   function closeMobileNav() {
     mobileNav?.classList.remove('open');
+    document.body.classList.remove('nav-open');
     document.body.style.overflow = '';
     hamburger?.classList.remove('active');
     hamburger?.setAttribute('aria-expanded', 'false');
